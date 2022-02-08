@@ -1,4 +1,4 @@
-# PyChain Ledger
+# PyChain Ledger Code
 ################################################################################
 # You’ll make the following updates to the provided Python file for this Challenge, which already contains the basic `PyChain` ledger structure that you created throughout the module:
 
@@ -151,6 +151,7 @@ pychain = setup()
 # 5. As part of the Add Block button functionality, update `new_block` so that `Block` consists of an attribute named `record`, which is set equal to a `Record` 
 #that contains the `sender`, `receiver`, and `amount` values. The updated `Block`should also include the attributes for `creator_id` and `prev_hash`.
 
+
 # Add an input area where you can get a value for `sender` from the user.
 sender_input = st.text_input("Sender")
 
@@ -168,7 +169,7 @@ if st.button("Add Block"):
     # Update `new_block` so that `Block` consists of an attribute named `record` which is set equal to a `Record` 
     # that contains the `sender`, `receiver`, and `amount` values
     new_block = Block(
-        data=input_data,
+        record=Record,
         creator_id=42,
         prev_hash=prev_block_hash)
 
